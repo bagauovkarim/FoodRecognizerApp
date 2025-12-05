@@ -85,3 +85,18 @@ lint-results*.html
 
 # Mac
 .DS_Store
+
+# Machine Learning Models (too large for GitHub)
+models/*.keras
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+
+# Training logs
+*.log
+reports/
