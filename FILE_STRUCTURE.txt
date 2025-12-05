@@ -1,0 +1,66 @@
+FoodRecognizerApp/
+│
+├── .github/
+│   └── workflows/
+│       └── android.yml                    # GitHub Actions CI/CD workflow
+│
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/com/example/foodrecognizer/
+│   │       │   ├── MainActivity.java      # Main activity (camera, gallery, API)
+│   │       │   ├── ApiClient.java         # API communication with OkHttp
+│   │       │   ├── Result.java            # Prediction data model
+│   │       │   └── ResultAdapter.java     # RecyclerView adapter
+│   │       │
+│   │       ├── res/
+│   │       │   ├── layout/
+│   │       │   │   ├── activity_main.xml  # Main UI layout
+│   │       │   │   └── result_item.xml    # Result card layout
+│   │       │   │
+│   │       │   ├── values/
+│   │       │   │   ├── colors.xml         # Color definitions
+│   │       │   │   ├── strings.xml        # Text strings
+│   │       │   │   └── themes.xml         # Material Design theme
+│   │       │   │
+│   │       │   ├── drawable/
+│   │       │   │   ├── rank_badge.xml     # Rank badge shape
+│   │       │   │   └── placeholder_image.xml
+│   │       │   │
+│   │       │   └── xml/
+│   │       │       ├── file_paths.xml     # FileProvider paths
+│   │       │       ├── backup_rules.xml   # Backup configuration
+│   │       │       └── data_extraction_rules.xml
+│   │       │
+│   │       └── AndroidManifest.xml        # App manifest + permissions
+│   │
+│   ├── build.gradle                       # App module configuration
+│   └── proguard-rules.pro                 # ProGuard rules
+│
+├── gradle/
+│   └── wrapper/
+│       ├── gradle-wrapper.jar             # Gradle wrapper JAR
+│       └── gradle-wrapper.properties      # Wrapper configuration
+│
+├── build.gradle                           # Project-level Gradle config
+├── settings.gradle                        # Project settings
+├── gradle.properties                      # Gradle properties
+│
+├── gradlew                                # Unix/Mac Gradle script
+├── gradlew.bat                            # Windows Gradle script
+│
+├── .gitignore                             # Git ignore rules
+│
+├── README.md                              # Main documentation
+├── USAGE.md                               # User guide
+├── BUILD_INSTRUCTIONS.md                  # Build guide
+├── PROJECT_SUMMARY.md                     # Project summary
+└── FILE_STRUCTURE.txt                     # This file
+
+TOTAL FILES: 30
+- Java source files: 4
+- XML layout files: 2
+- XML resource files: 8
+- Configuration files: 9
+- Documentation files: 5
+- Gradle files: 4

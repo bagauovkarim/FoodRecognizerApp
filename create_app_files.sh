@@ -1,0 +1,38 @@
+#!/bin/bash
+
+APP_DIR="/Users/karimildarovic/Recept AI/FoodRecognizerApp"
+cd "$APP_DIR"
+
+echo "Создание Android Manifest..."
+cat > "app/src/main/AndroidManifest.xml" << 'EOF'
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Food101 AI"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:usesCleartextTraffic="true">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+EOF
+
+echo "✓ AndroidManifest.xml"
+echo "Проект готов на 50%..."
