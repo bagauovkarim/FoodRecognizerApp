@@ -1,0 +1,6 @@
+TEXTURE-AWARE MODEL VALIDATION RESULTS
+==================================================
+
+val_accuracy:  0.7544
+confidence:    0.7328
+recall:        0.7544

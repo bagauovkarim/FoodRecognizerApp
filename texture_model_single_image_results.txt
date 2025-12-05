@@ -1,0 +1,17 @@
+TEXTURE-AWARE MODEL SINGLE IMAGE RESULTS
+==================================================
+
+Image:             500x500.jpeg
+True class:        Неизвестно
+Predicted class:   Macarons
+
+val_accuracy:  N/A
+confidence:    0.3069
+recall:        N/A
+
+Top-5 predictions:
+1. macarons                       0.3069
+2. deviled eggs                   0.1252
+3. caprese salad                  0.1198
+4. escargots                      0.1042
+5. beignets                       0.0427
